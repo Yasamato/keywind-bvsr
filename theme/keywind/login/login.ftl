@@ -19,7 +19,7 @@
   <#if section="header">
     ${msg("loginAccountTitle")}
   <#elseif section="form">
-    <#if realm.password>
+    <#if realm.password && realm.displayName != "BVSR">
       <@form.kw
         action=url.loginAction
         method="post"

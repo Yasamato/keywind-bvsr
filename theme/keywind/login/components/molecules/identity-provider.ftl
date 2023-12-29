@@ -63,18 +63,19 @@
       </#switch>
 
       <a
-        class="${colorClass} border border-secondary-200 flex justify-center py-2 rounded-lg hover:border-transparent"
+        class="${colorClass} border border-secondary-200 flex gap-1 items-center justify-center py-2 rounded-lg hover:border-transparent"
         data-provider="${provider.alias}"
         href="${provider.loginUrl}"
         type="button"
       >
         <#if providerIcons[provider.alias]??>
-          <div class="h-6 w-6">
+          <div class="h-8 w-8">
             <@providerIcons[provider.alias] />
           </div>
-        <#else>
-          ${provider.displayName!}
         </#if>
+        <div>
+          ${provider.displayName!}
+        </div>
       </a>
     </#list>
   </div>

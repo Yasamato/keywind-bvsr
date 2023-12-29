@@ -15,6 +15,24 @@
 <#import "./stackoverflow.ftl" as stackoverflowIcon>
 <#import "./twitter.ftl" as twitterIcon>
 
+<#import "./bvsr/bvsr.ftl" as bvsrIcon>
+<#import "./bvsr/sta.ftl" as staIcon>
+<#import "./bvsr/tudsat.ftl" as tudsatIcon>
+<#import "./bvsr/warr.ftl" as warrIcon>
+
+<#macro STA>
+  <@staIcon.kw />
+</#macro>
+<#macro BVSR>
+  <@bvsrIcon.kw />
+</#macro>
+<#macro TUDSaT>
+  <@tudsatIcon.kw />
+</#macro>
+<#macro WARR>
+  <@warrIcon.kw />
+</#macro>
+
 <#macro apple>
   <@appleIcon.kw />
 </#macro>
