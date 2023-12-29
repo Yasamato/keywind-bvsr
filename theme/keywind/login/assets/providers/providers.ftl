@@ -18,16 +18,20 @@
 <#import "./bvsr/bvsr.ftl" as bvsrIcon>
 <#import "./bvsr/sta.ftl" as staIcon>
 <#import "./bvsr/tudsat.ftl" as tudsatIcon>
+<#import "./bvsr/seesat.ftl" as seesatIcon>
 <#import "./bvsr/warr.ftl" as warrIcon>
 
-<#macro STA>
-  <@staIcon.kw />
-</#macro>
 <#macro BVSR>
   <@bvsrIcon.kw />
 </#macro>
+<#macro STA>
+  <@staIcon.kw />
+</#macro>
 <#macro TUDSaT>
   <@tudsatIcon.kw />
+</#macro>
+<#macro SeeSat>
+  <@seesatIcon.kw />
 </#macro>
 <#macro WARR>
   <@warrIcon.kw />
