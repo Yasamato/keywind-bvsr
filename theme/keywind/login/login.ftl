@@ -71,7 +71,7 @@
       </@form.kw>
     </#if>
   <#elseif section="info">
-    <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
+    <#if realm.password && realm.registrationAllowed && !registrationDisabled?? && realm.displayName != "BVSR">
       <div class="text-center">
         ${msg("noAccount")}
         <@link.kw color="primary" href=url.registrationUrl>

@@ -16,22 +16,26 @@
 <#import "./twitter.ftl" as twitterIcon>
 
 <#import "./bvsr/bvsr.ftl" as bvsrIcon>
-<#import "./bvsr/sta.ftl" as staIcon>
-<#import "./bvsr/tudsat.ftl" as tudsatIcon>
 <#import "./bvsr/seesat.ftl" as seesatIcon>
+<#import "./bvsr/sta.ftl" as staIcon>
+<#import "./bvsr/star.ftl" as starIcon>
+<#import "./bvsr/tudsat.ftl" as tudsatIcon>
 <#import "./bvsr/warr.ftl" as warrIcon>
 
 <#macro BVSR>
   <@bvsrIcon.kw />
 </#macro>
+<#macro SeeSat>
+  <@seesatIcon.kw />
+</#macro>
 <#macro STA>
   <@staIcon.kw />
 </#macro>
+<#macro STAR>
+  <@starIcon.kw />
+</#macro>
 <#macro TUDSaT>
   <@tudsatIcon.kw />
-</#macro>
-<#macro SeeSat>
-  <@seesatIcon.kw />
 </#macro>
 <#macro WARR>
   <@warrIcon.kw />
